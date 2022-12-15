@@ -1,0 +1,44 @@
+Age testar discrete and discretized;
+education-num não é continuo discrete;
+education e education-num se sugerir os dois, só usar um;
+capital-gain/capital-loss fica a nosso critério;
+horas por semana: discreto and discretized;
+
+First treino:
+Inputs: Estado casado
+	Relatioship
+	capitalgain
+	age
+	education
+	education_num
+	occupation
+	hoursperweek
+	capitalloss
+	sex
+
+Retiramos education_num porque é igual a ter education, e Relatioship porque o significado não faz sentido
+porque tem relações com outros parametros.
+
+Deixamos capitalgain e loss simplesmente para ver as diferenças quando retirarmos, mas tomar nota e explicar a nossa perspetiva do que é.
+
+Tem que acertar sempre mais de 75%.
+
+Temos menos exemplos de 50k, concluimos que classe positva é esta, mas nada impede ser o contrário.
+
+ID3 -> Entropy
+
+Parametros a mudar:
+
+Decision Tree -> Minimum_Support/Score_Method/Split_Method
+Score_Method -> Escolher as prioridades dos parametros
+Split_Method -> Ramificação se é binária ou completa
+Minimum_Support -> Minimo de Exemplos
+Complexity_Penalty -> Fica a nosso criterio, é para diminuir ramificação consuante os atributos
+
+Naive_Bayes -> Nada
+
+NeuralNetwork -> Hidden_Node_Ratio
+
+LogisticRegression -> Nada
+
+Clustering -> Cluster_Count
