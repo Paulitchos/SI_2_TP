@@ -1,0 +1,385 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="dde9fdd4-217d-4d41-b01c-14e891f72db8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Salaries_NoCapital</ID>
+  <Name>Salaries_NoCapital</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_Salaries</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-12609" scrolltop="-3625" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="28258" y="12250" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Salaries" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Salaries" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-12609</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3625</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="8b926daf-ac57-476d-9acf-07a6189151d8">
+    <DataSourceViewID>Salaries</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="be913c58-3704-4fb0-be50-f0b9dafec348">
+      <ID>Age</ID>
+      <Name>Age</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <DiscretizationMethod>Automatic</DiscretizationMethod>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3cafd933-910d-4ee7-af94-8c7cbd19f951">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="db5ae049-708f-4c15-8519-ef6f35d318f6">
+            <TableID>dbo_Salaries</TableID>
+            <ColumnID>age</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="097abac5-1a71-45d0-b81a-69a3d3f419f1">
+      <ID>Education</ID>
+      <Name>Education</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="afc1fdbb-18cb-4be6-acf2-d7d49cd9258d">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a0d24572-f75f-4b82-a463-ba831cd54694">
+            <TableID>dbo_Salaries</TableID>
+            <ColumnID>education</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5ff11d75-c6f5-4460-9735-f8b3e8e140b4">
+      <ID>Hoursperweek</ID>
+      <Name>Hoursperweek</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <DiscretizationMethod>Automatic</DiscretizationMethod>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="57b4bc36-1f05-41f3-8789-af5db5ac05ed">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7ada82a0-3489-4105-8f0b-6003253cadc1">
+            <TableID>dbo_Salaries</TableID>
+            <ColumnID>hoursperweek</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="522d6239-804d-4223-8132-3b900f946388">
+      <ID>ID</ID>
+      <Name>ID</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="be170173-4f60-484e-beb0-b5c9a9ef0093">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a08c0fe5-709c-47c0-b7b7-dcff5d0f2fca">
+            <TableID>dbo_Salaries</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b751acab-960c-48d7-a53d-1e779dc6e85c">
+      <ID>Maritalstatus</ID>
+      <Name>Maritalstatus</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6bb5fd7e-4314-4a42-9a07-a52edf4aa68a">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="775f3652-9877-4a20-af18-45c0691f0b80">
+            <TableID>dbo_Salaries</TableID>
+            <ColumnID>maritalstatus</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="068ee0c7-8e86-4a71-9991-4a744d4b22bc">
+      <ID>Occupation</ID>
+      <Name>Occupation</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="34294e9c-7600-4d50-a94b-dd0130dd3871">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="21cdea52-b487-497d-9076-ed6cea19c611">
+            <TableID>dbo_Salaries</TableID>
+            <ColumnID>occupation</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="478e3086-1fee-4598-b7c0-ec54932ced11">
+      <ID>Salary</ID>
+      <Name>Salary</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0d9ded78-8008-4bd9-9319-839ae8a1ffa5">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e9125bcf-b134-4d97-907f-0c7b64114506">
+            <TableID>dbo_Salaries</TableID>
+            <ColumnID>salary</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="fc13c229-215f-41a6-9b27-8db421173155">
+      <ID>Sex</ID>
+      <Name>Sex</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="94028db7-881c-41df-85db-2f6c225f2de2">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="07edff4b-2b4f-425b-bfbf-6e7f5d3dbfc2">
+            <TableID>dbo_Salaries</TableID>
+            <ColumnID>sex</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="7dc36614-2603-49bf-bfbf-c19fdeb616be">
+      <ID>Decision Tree_No Capital</ID>
+      <Name>Decision Tree_No Capital</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <AlgorithmParameters>
+        <AlgorithmParameter>
+          <Name>MINIMUM_SUPPORT</Name>
+          <Value xsi:type="xsd:double">500</Value>
+        </AlgorithmParameter>
+      </AlgorithmParameters>
+      <Columns>
+        <Column dwd:design-time-name="359f24e6-91d8-45a9-99a9-fdcb1483ae8c">
+          <ID>Age</ID>
+          <Name>Age</Name>
+          <SourceColumnID>Age</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="dc77ddf4-7159-4e8f-b104-00bdfc854d2e">
+          <ID>Education</ID>
+          <Name>Education</Name>
+          <SourceColumnID>Education</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d062ebdd-77f5-44aa-ba99-019fbb581f48">
+          <ID>Hoursperweek</ID>
+          <Name>Hoursperweek</Name>
+          <SourceColumnID>Hoursperweek</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="64690621-56e4-4df7-8896-eed4431ae6bd">
+          <ID>ID</ID>
+          <Name>ID</Name>
+          <SourceColumnID>ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="395ae0a7-1101-4457-8395-e75e74ff0c1a">
+          <ID>Maritalstatus</ID>
+          <Name>Maritalstatus</Name>
+          <SourceColumnID>Maritalstatus</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="fae73f45-f4cd-41c0-8b8d-4a8d384ae0d4">
+          <ID>Occupation</ID>
+          <Name>Occupation</Name>
+          <SourceColumnID>Occupation</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d2dde155-d48b-4c38-a729-7465052f4e1b">
+          <ID>Salary</ID>
+          <Name>Salary</Name>
+          <SourceColumnID>Salary</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="14e57b68-f89f-442b-9964-62941641cffa">
+          <ID>Sex</ID>
+          <Name>Sex</Name>
+          <SourceColumnID>Sex</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="b42e4a52-cfcd-455b-a859-f412370472a9">
+      <ID>Naive Bayes_No Capital</ID>
+      <Name>Naive Bayes_No Capital</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Naive_Bayes</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="7ad36506-3f79-42e3-925e-65be132239d1">
+          <ID>Age</ID>
+          <Name>Age</Name>
+          <SourceColumnID>Age</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="2db612bc-0350-4776-b154-5d9ca6b31b6e">
+          <ID>Education</ID>
+          <Name>Education</Name>
+          <SourceColumnID>Education</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="35f40dd6-109a-4fb3-ab81-56485b41b02a">
+          <ID>Hoursperweek</ID>
+          <Name>Hoursperweek</Name>
+          <SourceColumnID>Hoursperweek</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d98d3b45-5c8d-46e3-a64f-ff21010da1fa">
+          <ID>ID</ID>
+          <Name>ID</Name>
+          <SourceColumnID>ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="df4439a0-60c3-44b3-a8da-3f0108cde685">
+          <ID>Maritalstatus</ID>
+          <Name>Maritalstatus</Name>
+          <SourceColumnID>Maritalstatus</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="95dde5f0-179b-4fc6-866b-a193084fd3dd">
+          <ID>Occupation</ID>
+          <Name>Occupation</Name>
+          <SourceColumnID>Occupation</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="9f30e84f-5780-42a2-a09f-014b05b973b5">
+          <ID>Salary</ID>
+          <Name>Salary</Name>
+          <SourceColumnID>Salary</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="2fb2c5d6-4042-4750-b8cf-68b994dc4eb7">
+          <ID>Sex</ID>
+          <Name>Sex</Name>
+          <SourceColumnID>Sex</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="db9d038e-9edf-4e39-8436-61d29a1e079a">
+      <ID>Neural Network_No Capital</ID>
+      <Name>Neural Network_No Capital</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Neural_Network</Algorithm>
+      <AlgorithmParameters>
+        <AlgorithmParameter>
+          <Name>HIDDEN_NODE_RATIO</Name>
+          <Value xsi:type="xsd:double">10</Value>
+        </AlgorithmParameter>
+      </AlgorithmParameters>
+      <Columns>
+        <Column dwd:design-time-name="52339a8f-8e06-41c4-95a5-37b0e5c96f8c">
+          <ID>Age</ID>
+          <Name>Age</Name>
+          <SourceColumnID>Age</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="27e3f6ef-5257-4d9c-ae72-aab08fdd08d4">
+          <ID>Education</ID>
+          <Name>Education</Name>
+          <SourceColumnID>Education</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="f68c740d-07ab-4077-917b-39ccf7185a5e">
+          <ID>Hoursperweek</ID>
+          <Name>Hoursperweek</Name>
+          <SourceColumnID>Hoursperweek</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="f42c4244-bbbf-4304-91e7-bb73afa114e5">
+          <ID>ID</ID>
+          <Name>ID</Name>
+          <SourceColumnID>ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="4fa0fede-6b99-4562-8a21-405387cc011f">
+          <ID>Maritalstatus</ID>
+          <Name>Maritalstatus</Name>
+          <SourceColumnID>Maritalstatus</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="88c8f16a-fb08-4b9a-9f34-22ad22ee1381">
+          <ID>Occupation</ID>
+          <Name>Occupation</Name>
+          <SourceColumnID>Occupation</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="70ba010f-e525-49c1-88ed-62815fd15207">
+          <ID>Salary</ID>
+          <Name>Salary</Name>
+          <SourceColumnID>Salary</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="b7d41b60-ea23-4aea-b2c7-bba5c528ec7d">
+          <ID>Sex</ID>
+          <Name>Sex</Name>
+          <SourceColumnID>Sex</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>

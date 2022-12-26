@@ -23,6 +23,10 @@
       <Name>Salaries.dmm</Name>
       <FullPath>Salaries.dmm</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Salaries_NoCapital.dmm</Name>
+      <FullPath>Salaries_NoCapital.dmm</FullPath>
+    </ProjectItem>
   </MiningModels>
   <Configurations>
     <Configuration>
